@@ -7,7 +7,9 @@ import HeroSection from '../components/HeroSection'
 import RentAHome from '../components/RentAHome'
 import { baseUrl, fetchApi } from '../utils/api'
 
-export default function Home() {
+export default function Home({ propertiesForRent, propertiesForSale }) {
+  console.log(propertiesForRent)
+  console.log(propertiesForSale)
   return (
     <div className="relative flex min-h-screen flex-col">
       <Head>
@@ -16,8 +18,8 @@ export default function Home() {
       </Head>
       <Header />
       <HeroSection />
-      <BuyAHome />
-      <RentAHome />
+      <BuyAHome propertiesForSale={propertiesForSale && propertiesForSale} />
+      <RentAHome propertiesForRent={propertiesForRent && propertiesForRent} />
     </div>
   )
 }
