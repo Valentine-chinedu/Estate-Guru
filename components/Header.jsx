@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className=" fixed flex h-16 w-full items-center justify-between bg-white px-8">
+    <div className=" fixed z-50 flex h-16 w-full items-center justify-between bg-gray-100 px-8">
       <h1 className="font-serif text-2xl font-bold italic text-red-500">
         EstateGuru
       </h1>
