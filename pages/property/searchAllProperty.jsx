@@ -7,7 +7,7 @@ import { baseUrl, fetchApi } from '../../utils/api'
 import SearchFilter from '../../components/SearchFilter'
 import Link from 'next/link'
 
-const searchAllProperty = ({ properties }) => {
+const SearchAllProperty = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState('false')
   // const [rentFrequency, setRentFrequency] = useState('yearly')
   // const [minPrice, setMinPrice] = useState('0')
@@ -92,7 +92,7 @@ const searchAllProperty = ({ properties }) => {
   )
 }
 
-export default searchAllProperty
+export default SearchAllProperty
 
 export async function getServerSideProps({ query }) {
   console.log(query.rentFrequency)

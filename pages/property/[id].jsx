@@ -1,6 +1,5 @@
 import React from 'react'
 import { baseUrl, fetchApi } from '../../utils/api'
-import Image from 'next/image'
 
 import ImageGallery from 'react-image-gallery'
 import 'react-image-gallery/styles/css/image-gallery.css'
@@ -10,21 +9,18 @@ import { BsGridFill } from 'react-icons/bs'
 import { GoVerified } from 'react-icons/go'
 import millify from 'millify'
 
-const propertyDetails = ({
+const PropertyDetails = ({
   propertyInfo: {
-    coverPhoto,
     price,
     rentFrequency,
     rooms,
     title,
     baths,
     area,
-    agency,
     isVerified,
     description,
     type,
     purpose,
-    amenities,
     photos,
     furnishingStatus,
   },
@@ -93,7 +89,7 @@ const propertyDetails = ({
   )
 }
 
-export default propertyDetails
+export default PropertyDetails
 
 export async function getServerSideProps({ params: { id } }) {
   const data = await fetchApi(`${baseUrl}/properties/detail?externalID=${id}`)
