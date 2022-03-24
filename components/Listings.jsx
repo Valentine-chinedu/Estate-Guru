@@ -25,7 +25,7 @@ const Listings = ({
         <Image src={coverPhoto ? coverPhoto.url : 'NoImage'} layout="fill" />
         <div className="bg-red-6 absolute flex h-full w-full pl-4 pt-4 transition-all duration-500 group-hover:bg-black group-hover:bg-opacity-50">
           <h2 className="h-0 overflow-hidden text-xl font-bold uppercase text-amber-500 transition-all duration-500 group-hover:h-8">
-            {purpose}
+            {purpose === 'for-sale' ? 'for sale' : 'for rent'}
           </h2>
         </div>
         <div className="absolute bottom-10 z-40 flex h-8 w-full flex-col justify-center overflow-hidden px-2 py-2 font-medium text-white transition-all duration-500 group-hover:h-20">
