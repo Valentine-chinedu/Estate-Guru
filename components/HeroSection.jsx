@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const HeroSection = () => {
@@ -9,12 +10,26 @@ const HeroSection = () => {
       </div>
       <div className="h-0.5 w-7/12 bg-gray-50 "></div>
       <div className="space-x-8 text-gray-100">
-        <a className="cursor-pointer bg-red-500 px-8 py-1 font-medium uppercase hover:bg-red-400">
-          buy
-        </a>
-        <a className="cursor-pointer bg-red-500 px-8 py-1 font-medium uppercase hover:bg-red-400">
-          rent
-        </a>
+        <Link
+          href={{
+            pathname: '/property/searchAllProperty',
+            query: { type: 'for-sale' },
+          }}
+        >
+          <a className="cursor-pointer bg-blue-600 px-8 py-1 font-medium uppercase hover:bg-blue-400">
+            Buy
+          </a>
+        </Link>
+        <Link
+          href={{
+            pathname: '/property/searchAllProperty',
+            query: { type: 'for-rent' },
+          }}
+        >
+          <a className="cursor-pointer bg-blue-600 px-8 py-1 font-medium uppercase hover:bg-blue-400">
+            Rent
+          </a>
+        </Link>
       </div>
     </div>
   )
