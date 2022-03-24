@@ -1,5 +1,3 @@
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
-
 import Head from 'next/head'
 import Banner from '../components/Banner'
 import BuyAHome from '../components/BuyAHome'
@@ -9,8 +7,6 @@ import RentAHome from '../components/RentAHome'
 import { baseUrl, fetchApi } from '../utils/api'
 
 export default function Home({ propertiesForRent, propertiesForSale }) {
-  console.log(propertiesForRent)
-  console.log(propertiesForSale)
   return (
     <div className="relative flex min-h-screen flex-col">
       <Head>
