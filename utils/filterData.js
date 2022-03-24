@@ -1,14 +1,6 @@
 export const filterData = [
   {
     items: [
-      { name: 'Buy', value: 'for-sale' },
-      { name: 'Rent', value: 'for-rent' },
-    ],
-    placeholder: 'Purpose',
-    queryName: 'purpose',
-  },
-  {
-    items: [
       { name: 'Daily', value: 'daily' },
       { name: 'Weekly', value: 'weekly' },
       { name: 'Monthly', value: 'monthly' },
@@ -61,7 +53,7 @@ export const filterData = [
       { name: 'Verified', value: 'verified-score' },
       { name: 'City Level Score', value: 'city-level-score' },
     ],
-    placeholder: 'Sort',
+    placeholder: 'Sort By',
     queryName: 'sort',
   },
   {
