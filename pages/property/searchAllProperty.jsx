@@ -1,23 +1,12 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 import { BsFilter } from 'react-icons/bs'
 import Listings from '../../components/Listings'
 import { baseUrl, fetchApi } from '../../utils/api'
 import SearchFilter from '../../components/SearchFilter'
-import Link from 'next/link'
 
 const SearchAllProperty = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState('false')
-  // const [rentFrequency, setRentFrequency] = useState('yearly')
-  // const [minPrice, setMinPrice] = useState('0')
-  // const [maxPrice, setMaxPrice] = useState('1000000')
-  // const [sort, setSort] = useState('price-desc')
-  // const [roomsMin, setRoomsMin] = useState('1')
-  // const [bathsMin, setBathsMin] = useState('1')
-  // const [areaMax, setareaMax] = useState('35000')
-  // const [locationExternalIDs, setLocationExternalIDs] = useState('5002,6020')
-  // const [categoryExternalID, setCategoryExternalID] = useState('4')
 
   const router = useRouter()
 
@@ -95,7 +84,6 @@ const SearchAllProperty = ({ properties }) => {
 export default SearchAllProperty
 
 export async function getServerSideProps({ query }) {
-  console.log(query.rentFrequency)
   const purpose = query.type || 'for-rent'
   const rentFrequency = query.rentFrequency || 'yearly'
   const minPrice = query.minPrice || '0'
