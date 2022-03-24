@@ -21,7 +21,7 @@ const Listings = ({
 }) => {
   return (
     <Link href={`/property/${externalID}`} passHref>
-      <a className="group relative h-[24rem] w-[27rem] cursor-pointer">
+      <div className="group relative h-[24rem] w-[27rem] cursor-pointer">
         <Image
           src={coverPhoto ? coverPhoto.url : 'NoImage'}
           alt=""
@@ -53,7 +53,7 @@ const Listings = ({
             {title.length > 30 ? `${title.substring(0, 30)}...` : title}
           </h3>
         </div>
-      </a>
+      </div>
     </Link>
   )
 }
