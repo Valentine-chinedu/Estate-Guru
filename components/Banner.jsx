@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 
 const Banner = ({ title, listing, type }) => {
