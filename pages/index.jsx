@@ -14,14 +14,22 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
   return (
     <div className="relative flex min-h-screen flex-col">
       <Head>
-        <title>Create Next App</title>
+        <title>EstateGuru</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <HeroSection />
-      <Banner title="Luxury Realestate for sale" listing="Current listings" />
+      <Banner
+        title="Luxury Realestate for sale"
+        listing="Current listings"
+        type="for-sale"
+      />
       <BuyAHome propertiesForSale={propertiesForSale && propertiesForSale} />
-      <Banner title="Luxury Realestate for Rent" listing="Current listings" />
+      <Banner
+        title="Luxury Realestate for Rent"
+        listing="Current listings"
+        type="for-rent"
+      />
       <RentAHome propertiesForRent={propertiesForRent && propertiesForRent} />
     </div>
   )
