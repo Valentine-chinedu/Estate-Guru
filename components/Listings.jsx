@@ -20,9 +20,13 @@ const Listings = ({
   rooms,
 }) => {
   return (
-    <Link href={`/property/${externalID}`}>
-      <div className="group w- relative h-[24rem] w-[27rem] cursor-pointer">
-        <Image src={coverPhoto ? coverPhoto.url : 'NoImage'} layout="fill" />
+    <Link href={`/property/${externalID}`} passHref>
+      <a className="group relative h-[24rem] w-[27rem] cursor-pointer">
+        <Image
+          src={coverPhoto ? coverPhoto.url : 'NoImage'}
+          alt=""
+          layout="fill"
+        />
         <div className="bg-red-6 absolute flex h-full w-full pl-4 pt-4 transition-all duration-500 group-hover:bg-black group-hover:bg-opacity-50">
           <h2 className="h-0 overflow-hidden text-xl font-bold uppercase text-amber-500 transition-all duration-500 group-hover:h-8">
             {purpose === 'for-sale' ? 'for sale' : 'for rent'}
@@ -49,7 +53,7 @@ const Listings = ({
             {title.length > 30 ? `${title.substring(0, 30)}...` : title}
           </h3>
         </div>
-      </div>
+      </a>
     </Link>
   )
 }
