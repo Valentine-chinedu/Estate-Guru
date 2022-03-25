@@ -7,6 +7,8 @@ import RentAHome from '../components/RentAHome'
 import { baseUrl, fetchApi } from '../utils/api'
 
 function Home({ propertiesForRent, propertiesForSale }) {
+  console.log(propertiesForRent)
+  console.log(propertiesForSale)
   return (
     <div className="relative flex min-h-screen flex-col">
       <Head>
@@ -20,13 +22,13 @@ function Home({ propertiesForRent, propertiesForSale }) {
         listing="Current listings"
         type="for-sale"
       />
-      <BuyAHome propertiesForSale={propertiesForSale} />
+      {/* <BuyAHome propertiesForSale={propertiesForSale} /> */}
       <Banner
         title="Luxury Realestate for Rent"
         listing="Current listings"
         type="for-rent"
       />
-      <RentAHome propertiesForRent={propertiesForRent} />
+      {/* <RentAHome propertiesForRent={propertiesForRent} /> */}
     </div>
   )
 }

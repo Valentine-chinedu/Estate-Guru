@@ -20,7 +20,7 @@ const Listings = ({
 }) => {
   return (
     <div>
-      <Link href={`/property/${externalID}`} passHref>
+      <Link href={`/property/${externalID}`}>
         <a>
           <div className="group relative h-[24rem] w-[27rem] cursor-pointer">
             <Image
