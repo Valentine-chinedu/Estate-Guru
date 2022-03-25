@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -20,7 +21,7 @@ const Listings = ({
 }) => {
   return (
     <div>
-      <Link href={`/property/${externalID}`}>
+      <Link href={`/property/${externalID}`} passHref>
         <a>
           <div className="group relative h-[24rem] w-[27rem] cursor-pointer">
             <Image
