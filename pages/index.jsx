@@ -17,18 +17,18 @@ function Home({ propertiesForRent, propertiesForSale }) {
       </Head>
 
       <HeroSection />
-      <Banner
+      {/* <Banner
         title="Luxury Realestate for sale"
         listing="Current listings"
         type="for-sale"
-      />
-      {/* <BuyAHome propertiesForSale={propertiesForSale} /> */}
-      <Banner
+      /> */}
+      <BuyAHome propertiesForSale={propertiesForSale} />
+      {/* <Banner
         title="Luxury Realestate for Rent"
         listing="Current listings"
         type="for-rent"
-      />
-      {/* <RentAHome propertiesForRent={propertiesForRent} /> */}
+      /> */}
+      <RentAHome propertiesForRent={propertiesForRent} />
     </div>
   )
 }
