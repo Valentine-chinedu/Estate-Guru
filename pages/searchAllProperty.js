@@ -41,7 +41,9 @@ const SearchAllProperty = ({ properties }) => {
               price={property.price}
               rentFrequency={property.rentFrequency}
               rooms={property.rooms}
-              purpose={router.query.type}
+              purpose={
+                router.query.type === 'for-sale' ? 'for sale' : 'for rent'
+              }
             />
           </div>
         ))}
