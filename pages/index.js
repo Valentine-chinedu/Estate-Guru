@@ -15,8 +15,7 @@ function Home({ propertiesForRent, propertiesForSale }) {
         <title>EstateGuru</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <HeroSection />
+      {/* <HeroSection />
       <Banner
         title="Luxury Realestate for sale"
         listing="Current listings"
@@ -28,7 +27,8 @@ function Home({ propertiesForRent, propertiesForSale }) {
         listing="Current listings"
         type="for-rent"
       />
-      <RentAHome propertiesForRent={propertiesForRent} />
+      <RentAHome propertiesForRent={propertiesForRent} /> */}
+      hello
     </div>
   )
 }
