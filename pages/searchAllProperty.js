@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { BsFilter } from 'react-icons/bs'
-import Listings from '../../components/Listings'
-import { baseUrl, fetchApi } from '../../utils/api'
-import SearchFilter from '../../components/SearchFilter'
+import Listings from '../components/Listings'
+import { baseUrl, fetchApi } from '../utils/api'
+import SearchFilter from '../components/SearchFilter'
 
 const SearchAllProperty = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState('false')

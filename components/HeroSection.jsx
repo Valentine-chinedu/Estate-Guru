@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="space-x-8 text-gray-100">
         <Link
           href={{
-            pathname: '/property/searchAllProperty',
+            pathname: '/searchAllProperty',
             query: { type: 'for-sale' },
           }}
         >
@@ -22,7 +22,7 @@ const HeroSection = () => {
         </Link>
         <Link
           href={{
-            pathname: '/property/searchAllProperty',
+            pathname: '/searchAllProperty',
             query: { type: 'for-rent' },
           }}
         >

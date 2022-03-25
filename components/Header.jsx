@@ -18,7 +18,7 @@ const Header = () => {
           </Link>
           <Link
             href={{
-              pathname: '/property/searchAllProperty',
+              pathname: '/searchAllProperty',
               query: { type: 'for-sale' },
             }}
           >
@@ -28,7 +28,7 @@ const Header = () => {
           </Link>
           <Link
             href={{
-              pathname: '/property/searchAllProperty',
+              pathname: '/searchAllProperty',
               query: { type: 'for-rent' },
             }}
           >

@@ -11,7 +11,7 @@ const Banner = ({ title, listing, type }) => {
       </p>
       <Link
         href={{
-          pathname: '/property/searchAllProperty',
+          pathname: '/searchAllProperty',
           query: { type: type },
         }}
       >
