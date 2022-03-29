@@ -11,6 +11,6 @@ Real estate listing website built to list properties that is for sale or for ren
 - Tailwind Css
 - Rapidapi
 
-## Link
+## View Application
 
 [Live Website](http://estate-guru.vercel.app/)
