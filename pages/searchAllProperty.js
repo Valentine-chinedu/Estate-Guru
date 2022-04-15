@@ -13,7 +13,7 @@ const SearchAllProperty = ({ properties }) => {
   const page = Number(router.query.page) || 0
 
   return (
-    <div className="pt-20">
+    <div className="w-full overflow-hidden pt-20">
       <div
         className="flex cursor-pointer items-center justify-center space-x-2 border-b border-gray-200 bg-gray-900 p-2 text-lg font-bold "
         onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
@@ -28,7 +28,7 @@ const SearchAllProperty = ({ properties }) => {
           ? 'properties for sale'
           : 'properties for rent'}
       </h3>
-      <div className="mx-48 grid h-full grid-cols-3 justify-items-center gap-y-8 py-8">
+      <div className="mx-48 grid h-full grid-cols-1 justify-items-center md:gap-y-8 md:py-8 lg:grid-cols-3">
         {properties?.map((property) => (
           <div className="" key={property.id}>
             <Listings
@@ -53,7 +53,7 @@ const SearchAllProperty = ({ properties }) => {
           <h1 className="text-2xl">No Results found</h1>
         </div>
       )}
-      <div className="flex w-full justify-center space-x-8 pb-8 text-gray-100">
+      <div className="flex w-full items-center justify-center space-x-8 py-4 text-gray-100 lg:py-0 lg:pb-8">
         <button
           className="rounded-lg bg-blue-600 px-2 py-0.5 text-xs uppercase disabled:bg-blue-400"
           onClick={() =>

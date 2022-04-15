@@ -30,12 +30,12 @@ const Listings = ({
               alt=""
               layout="fill"
             />
-            <div className="bg-red-6 absolute flex h-full w-full pl-4 pt-4 transition-all duration-500 group-hover:bg-black group-hover:bg-opacity-50">
-              <h2 className="h-0 overflow-hidden text-xl font-bold uppercase text-amber-500 transition-all duration-500 group-hover:h-8">
+            <div className="absolute flex h-full w-full justify-center bg-black bg-opacity-25 pt-4 transition-all duration-500 lg:justify-start lg:pl-4 lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
+              <h2 className="h-8 overflow-hidden font-bold uppercase text-amber-500 transition-all duration-500 lg:h-0 lg:text-xl lg:group-hover:h-8">
                 {purpose}
               </h2>
             </div>
-            <div className="absolute bottom-10 z-40 flex h-8 w-full flex-col justify-center overflow-hidden px-2 py-2 font-medium text-white transition-all duration-500 group-hover:h-20">
+            <div className="absolute bottom-10 z-40 flex h-20 w-full flex-col justify-center overflow-hidden px-10 py-2 font-medium text-white transition-all duration-500 lg:h-8 lg:px-2 lg:group-hover:h-20">
               <div className="mb-1 flex items-center justify-between">
                 <div>
                   {isVerified && (

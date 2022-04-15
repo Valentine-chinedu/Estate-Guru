@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center space-y-8 bg-[url('/realestate4.jpg')] ">
-      <div className="flex w-6/12 flex-col items-center text-6xl font-bold uppercase text-blue-200">
+    <div className="flex h-screen w-full flex-col items-center justify-center space-y-8 bg-[url('/realestate4.jpg')] bg-cover">
+      <div className="flex w-6/12 flex-col items-center text-center text-6xl font-bold uppercase text-violet-600">
         <h1>looking for a new</h1>
         <h1>Property?</h1>
       </div>

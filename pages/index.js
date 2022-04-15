@@ -10,7 +10,7 @@ function Home({ propertiesForRent, propertiesForSale }) {
   console.log(propertiesForRent)
   console.log(propertiesForSale)
   return (
-    <div className="relative flex min-h-screen flex-col">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-x-hidden">
       <Head>
         <title>EstateGuru</title>
         <link rel="icon" href="/favicon.ico" />
