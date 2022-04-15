@@ -21,7 +21,10 @@ const Header = () => {
       >
         <ul className="flex flex-col items-center space-y-8 text-lg font-medium text-gray-700 lg:flex-row lg:space-y-0 lg:space-x-12 lg:text-sm">
           <Link href="/">
-            <a className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100">
+            <a
+              onClick={() => setOpenSideBar(false)}
+              className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100"
+            >
               Home
             </a>
           </Link>
@@ -31,7 +34,10 @@ const Header = () => {
               query: { type: 'for-sale' },
             }}
           >
-            <a className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100">
+            <a
+              onClick={() => setOpenSideBar(false)}
+              className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100"
+            >
               Buy
             </a>
           </Link>
@@ -41,15 +47,24 @@ const Header = () => {
               query: { type: 'for-rent' },
             }}
           >
-            <a className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100">
+            <a
+              onClick={() => setOpenSideBar(false)}
+              className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100"
+            >
               Rent
             </a>
           </Link>
 
-          <li className="hover:bg-600-600 cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100">
+          <li
+            onClick={() => setOpenSideBar(false)}
+            className="hover:bg-600-600 cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100"
+          >
             About
           </li>
-          <li className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100">
+          <li
+            onClick={() => setOpenSideBar(false)}
+            className="cursor-pointer py-1 px-2 hover:bg-blue-600 hover:text-gray-100"
+          >
             contact
           </li>
         </ul>
