@@ -13,7 +13,7 @@ const SearchAllProperty = ({ properties }) => {
   const page = Number(router.query.page) || 0
 
   return (
-    <div className="w-full overflow-hidden pt-20">
+    <div className="w-full overflow-hidden bg-gray-100 pt-12 md:pt-24">
       <div
         className="flex cursor-pointer items-center justify-center space-x-2 border-b border-gray-200 bg-gray-900 p-2 text-lg font-bold "
         onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
@@ -23,30 +23,32 @@ const SearchAllProperty = ({ properties }) => {
       </div>
       {searchFilters && <SearchFilter />}
 
-      <h3 className="p-4 text-2xl font-bold uppercase text-blue-600">
+      <h3 className="p-4 text-2xl font-bold uppercase text-gray-900">
         {router.query.type === 'for-sale'
           ? 'properties for sale'
           : 'properties for rent'}
       </h3>
-      <div className="mx-48 grid h-full grid-cols-1 justify-items-center md:gap-y-8 md:py-8 lg:grid-cols-3">
-        {properties?.map((property) => (
-          <div className="" key={property.id}>
-            <Listings
-              title={property.title}
-              baths={property.baths}
-              area={property.area}
-              isVerified={property.isVerified}
-              externalID={property.externalID}
-              coverPhoto={property.coverPhoto}
-              price={property.price}
-              rentFrequency={property.rentFrequency}
-              rooms={property.rooms}
-              purpose={
-                router.query.type === 'for-sale' ? 'for sale' : 'for rent'
-              }
-            />
-          </div>
-        ))}
+      <div className="flex w-full justify-center">
+        <div className="mx-48 grid h-full grid-cols-1 justify-items-center gap-y-4 md:gap-y-8 md:py-8 lg:mx-0 lg:w-8/12 lg:grid-cols-3 lg:gap-x-2">
+          {properties?.map((property) => (
+            <div className="" key={property.id}>
+              <Listings
+                title={property.title}
+                baths={property.baths}
+                area={property.area}
+                isVerified={property.isVerified}
+                externalID={property.externalID}
+                coverPhoto={property.coverPhoto}
+                price={property.price}
+                rentFrequency={property.rentFrequency}
+                rooms={property.rooms}
+                purpose={
+                  router.query.type === 'for-sale' ? 'for sale' : 'for rent'
+                }
+              />
+            </div>
+          ))}
+        </div>
       </div>
       {properties.length === 0 && (
         <div className="flex items-center justify-center ">

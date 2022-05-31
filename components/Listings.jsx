@@ -23,41 +23,47 @@ const Listings = ({
   return (
     <div>
       <Link href={`/property/${externalID}`}>
-        <a>
-          <div className="group relative h-[24rem] w-[27rem] cursor-pointer">
-            <Image
-              src={coverPhoto ? coverPhoto.url : 'NoImage'}
-              alt=""
-              layout="fill"
-            />
-            <div className="absolute flex h-full w-full justify-center bg-black bg-opacity-25 pt-4 transition-all duration-500 lg:justify-start lg:pl-4 lg:group-hover:bg-black lg:group-hover:bg-opacity-50">
-              <h2 className="h-8 overflow-hidden font-bold uppercase text-amber-500 transition-all duration-500 lg:h-0 lg:text-xl lg:group-hover:h-8">
-                {purpose}
-              </h2>
-            </div>
-            <div className="absolute bottom-10 z-40 flex h-20 w-full flex-col justify-center overflow-hidden px-10 py-2 font-medium text-white transition-all duration-500 lg:h-8 lg:px-2 lg:group-hover:h-20">
-              <div className="mb-1 flex items-center justify-between">
-                <div>
-                  {isVerified && (
-                    <GoVerified className="bg-gray-50 p-0.5 text-lg text-green-500" />
-                  )}
+        <a className="relative">
+          <div
+            className="relative h-[24rem] w-80 cursor-pointer bg-center"
+            style={{
+              backgroundImage: `url(${
+                coverPhoto ? coverPhoto.url : 'No Image'
+              })`,
+            }}
+          >
+            <div className="flex h-full flex-col justify-between py-2">
+              <div className=" z-10 flex justify-center pt-4 transition-all duration-500 lg:justify-start lg:pl-4">
+                <h2 className="h-8 overflow-hidden font-bold uppercase text-[#D4AF37] transition-all duration-500 lg:text-xl">
+                  {purpose}
+                </h2>
+              </div>
+              <div className="  z-10 flex h-20 w-full flex-col justify-center overflow-hidden px-10 py-2 font-medium text-white transition-all duration-500 lg:h-8 lg:px-2 lg:hover:h-20">
+                <div className="mb-1 flex items-center justify-between">
+                  <div>
+                    {isVerified && (
+                      <GoVerified className="bg-gray-50 p-0.5 text-lg text-green-500" />
+                    )}
+                  </div>
+                  <h3>
+                    AED {millify(price)}
+                    {rentFrequency && `/${rentFrequency}`}
+                  </h3>
                 </div>
-                <h3>
-                  AED {millify(price)}
-                  {rentFrequency && `/${rentFrequency}`}
+                <div className="flex w-64 items-center justify-between p-1">
+                  {rooms} <FaBed className="text-2xl text-[#D4AF37]" /> |{' '}
+                  {baths}
+                  <FaBath className="text-2xl text-[#D4AF37]" /> |
+                  {millify(area)} sqft
+                  <BsGridFill className="text-2xl text-[#D4AF37]" />
+                </div>
+                <h3 className="text-sm">
+                  {title.length > 30 ? `${title.substring(0, 30)}...` : title}
                 </h3>
               </div>
-              <div className="flex w-64 items-center justify-between p-1">
-                {rooms} <FaBed className="text-2xl text-blue-500" /> | {baths}
-                <FaBath className="text-2xl text-blue-500" /> | {millify(area)}{' '}
-                sqft
-                <BsGridFill className="text-2xl text-blue-500" />
-              </div>
-              <h3 className="text-sm">
-                {title.length > 30 ? `${title.substring(0, 30)}...` : title}
-              </h3>
             </div>
           </div>
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </a>
       </Link>
     </div>

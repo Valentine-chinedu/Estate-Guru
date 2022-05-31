@@ -24,7 +24,7 @@ const SearchFilter = () => {
   }
 
   return (
-    <div className="flex w-full flex-wrap justify-center bg-gray-900 p-4">
+    <div className="flex w-full flex-wrap justify-center bg-black p-4">
       {filters.map((filter) => (
         <div key={filter.queryName}>
           <h3 className="pr-2 pb-1 text-sm text-gray-100">

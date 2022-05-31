@@ -1,33 +1,26 @@
 import Head from 'next/head'
-import Banner from '../components/Banner'
-import BuyAHome from '../components/BuyAHome'
+import Explore from '../components/Explore'
+import MostViewed from '../components/MostViewed'
 
 import HeroSection from '../components/HeroSection'
-import RentAHome from '../components/RentAHome'
+import BuyRentAHome from '../components/BuyRentAHome'
 import { baseUrl, fetchApi } from '../utils/api'
+import Testimonials from '../components/Testimonials'
 
 function Home({ propertiesForRent, propertiesForSale }) {
   console.log(propertiesForRent)
   console.log(propertiesForSale)
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-x-hidden">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-x-hidden bg-black">
       <Head>
         <title>EstateGuru</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroSection />
-      <Banner
-        title="Luxury Realestate for sale"
-        listing="Current listings"
-        type="for-sale"
-      />
-      <BuyAHome propertiesForSale={propertiesForSale} />
-      <Banner
-        title="Luxury Realestate for Rent"
-        listing="Current listings"
-        type="for-rent"
-      />
-      <RentAHome propertiesForRent={propertiesForRent} />
+      <Explore propertiesForSale={propertiesForSale} />
+      <MostViewed propertiesForSale={propertiesForSale} />
+      <BuyRentAHome />
+      <Testimonials />
     </div>
   )
 }
