@@ -31,7 +31,7 @@ const Header = () => {
         )}
         <div className="flex flex-col items-center">
           <Link href="/">
-            <a className="font-bold uppercase text-[#D4AF37] lg:text-xl">
+            <a className="font-source font-bold uppercase text-[#D4AF37] lg:text-xl">
               Estate Guru
             </a>
           </Link>
@@ -83,7 +83,7 @@ const Header = () => {
           openSideBar ? 'w-56 md:w-96' : 'w-0'
         } z-40 h-full text-sm transition-[width] duration-500`}
       >
-        <ul className="flex flex-col items-center space-y-8 text-lg font-medium text-gray-100 lg:h-full lg:flex-row lg:space-y-0 lg:space-x-12 lg:text-sm lg:text-gray-900">
+        <ul className="flex flex-col items-center space-y-8 font-source text-lg font-semibold text-gray-100 lg:h-full lg:flex-row lg:space-y-0 lg:space-x-12 lg:text-sm lg:text-gray-900">
           <Link href="/">
             <a
               onClick={() => setOpenSideBar(false)}

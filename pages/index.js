@@ -11,7 +11,7 @@ function Home({ propertiesForRent, propertiesForSale }) {
   console.log(propertiesForRent)
   console.log(propertiesForSale)
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-x-hidden bg-black">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-x-hidden bg-black font-source">
       <Head>
         <title>EstateGuru</title>
         <link rel="icon" href="/favicon.ico" />

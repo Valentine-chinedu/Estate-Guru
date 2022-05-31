@@ -4,7 +4,7 @@ import React from 'react'
 const BuyRentAHome = () => {
   return (
     <div className="relative w-full bg-[url('/vita-vilcina-KtOid0FLjqU-unsplash.jpg')] bg-cover md:flex md:items-center md:justify-center md:bg-center">
-      <div className="flex w-full flex-col items-center space-y-8 py-14 px-10 md:w-7/12 md:flex-row md:space-x-20 md:space-y-0">
+      <div className="flex w-full flex-col items-center space-y-8 py-14 px-10 md:w-7/12 md:flex-row md:space-x-20 md:space-y-0 md:py-16">
         <div className="z-10 flex flex-col items-center space-y-4">
           <div className="flex items-center space-x-1.5">
             <svg

@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="relative w-full">
       <div className="flex h-screen w-full flex-col items-center justify-center space-y-12 bg-[url('/outsite-co-R-LK3sqLiBw-unsplash.jpg')] bg-cover px-4 lg:flex-row lg:space-x-40 lg:space-y-0 lg:pt-16">
         <div className=" z-40 flex flex-col items-center text-gray-100">
-          <p className="text-center text-lg font-bold lg:text-2xl">
+          <p className="text-center text-lg font-bold  lg:text-2xl">
             The Best Place to Find The Perfect Home
           </p>
           <p className="text-sm font-medium text-gray-200 lg:text-base">
