@@ -1,4 +1,4 @@
-![estate-guru](https://user-images.githubusercontent.com/65251662/160610797-8a6a9de4-8073-44d1-b3ab-ff9c6cf7ee42.png)
+![estate-guru-new](https://user-images.githubusercontent.com/65251662/171297473-0070dcac-3a8a-43a7-8a96-ec9271a54e6b.png)
 
 ## About
 
@@ -14,3 +14,4 @@ Real estate listing website built to list properties that is for sale or for ren
 ## View Application
 
 [Live Website](http://estate-guru.vercel.app/)
+
