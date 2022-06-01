@@ -38,7 +38,7 @@ const Testimonials = () => {
               libero vehicula
             </span>
             <svg
-              className="relative left-8 bottom-4 h-3 w-3"
+              className="relative left-20 bottom-4 h-3 w-3 md:left-8"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -78,7 +78,7 @@ const Testimonials = () => {
               libero vehicula
             </span>
             <svg
-              className="relative left-8 bottom-4 h-3 w-3"
+              className="relative left-20 bottom-4 h-3 w-3 md:left-8"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -118,7 +118,7 @@ const Testimonials = () => {
               libero vehicula
             </span>
             <svg
-              className="relative bottom-4 left-8 h-3 w-3"
+              className="relative left-20 bottom-4 h-3 w-3 md:left-8"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
